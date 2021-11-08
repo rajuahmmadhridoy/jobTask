@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link,Redirect } from "react-router-dom";
 import Show from "./component/show/Show";
 import Shows from "./component/shows/Shows";
 function App() {
@@ -8,7 +8,11 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/tv-shows/avengers">
+
+          <Route exact path="/">
+          <Redirect to="/tv-shows/avengers" />
+          </Route>
+          <Route  path="/tv-shows/avengers">
             <Shows />
           </Route>
           <Route path="/tv-shows/details/:id">
