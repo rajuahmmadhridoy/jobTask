@@ -1,0 +1,20 @@
+.show {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  background: #0a192f;
+}
+.show h3 {
+  color: #fff;
+  padding-top: 24px;
+  font-size: 35px;
+}
+.showImg {
+  width: 540px;
+  height: 500px;
+  margin: auto;
+}
+.showImg img {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,25 @@
+.shows {
+  background: #0a192f;
+  width: 700px;
+  margin: auto;
+  height: 400px;
+  margin-top: 20px;
+}
+.shows h3 {
+  color: #fff;
+  padding-top: 5px;
+  font-size: 27px;
+}
+
+.shows a button {
+  border: nane;
+  border: none;
+  width: 490px;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  color: gray;
+  border-radius: 5px;
+}
