@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import "./shows.css";
 const Shows = () => {
   const [data, setData] = useState([]);
+  const [error, setError] = useState({});
   useEffect(() => {
     fetch(
       "https://api.tvmaze.com/search/shows?q=avengers&fbclid=IwAR1HxahjGIjuDZu3I_QEnqRrbbYi9f5Fe1lS7zMYQfMYeGTsajI84hDKsDU"
     )
       .then((res) => res.json())
-      .then((item) => setData(item));
+      .then((item) => setData(item))
+      .catch(err => setError(err))
   }, []);
   return (
     <div>
